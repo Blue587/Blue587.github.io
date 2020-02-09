@@ -2,8 +2,8 @@ each Pokémon has a block of 0x0E bytes
 
 from 0x0 to 0xE - each bit represents whether a TM/HM is learnable or not
 
-from 0xF to 0x42 - every move learned by leveling up, represented by 2 bytes each
-from 0x43 to 0x5D - levels at which each move is learned. 1 byte for each move
+from 0xF to 0x43 - every move learned by leveling up, represented by 2 bytes each
+from 0x44 to 0x5D - levels at which each move is learned. 1 byte for each move
 
 0x5E and 0x5F - unknown (always 00?)
 
@@ -24,7 +24,10 @@ bit 7 - unknown. seems to always be inactive?
 0x66 and 0x67 - unknown. seems to be the same as above for some Pokémon (generations 1 and 2?) but different for others
 0x68 - Pokémon Category
 
-from 0x69 to 0x7B - unknown
+from 0x69 to 0x79 - unknown
+
+0x7A - index used when listing Pokémon? (ex. Snivy is 1, Servine is 2, Serperior is 3)
+0x7B - unk
 
 from 0x7C to 0xCF: data relating to evolutions and previous stages. these bytes form blocks of 0xC bytes for each possible evolution
 for each block:
