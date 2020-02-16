@@ -12,7 +12,6 @@ bit 4 - if active, team level resets to 5
 bit 5 - unk
 bit 6 - if active, can change leader inside dungeon
 bit 7 - unk.
-traps?
 
 0x03
 bit 0 - unk
