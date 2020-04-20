@@ -1,0 +1,15 @@
+experience.ent contains pointers to the start of each entry in experience.bin
+each entry is 0x4c0 bytes long. rather than every Pokémon having its own entry, they share multiple entries based on their evolutionary line
+this evolutionary line ID can be found in each Pokémon's pokemon_data_info.bin entry at address 0x84 of each entry
+
+experience.bin entry contains stat gains for each level up
+each level takes up 0xC bytes:
+from 0x0 to 0x3 - experience points needed to reach this level
+0x4 - HP gained
+0x5 - Attack gained
+0x6 - Special Attack gained
+0x7 - Defense gained
+0x8 - Special Defense gained
+0x9 - Speed gained
+0xA - always 1. levels gained?
+0xB - always 0.
