@@ -1,0 +1,49 @@
+each Pokémon has a block of 0xE0 bytes
+
+from 0x0 to 0xF except 0xD - each bit represents whether a TM/HM can be learned or not
+when reading each bit of each byte from the least significant bit, the bits are in the same order as the TMs section of the items list (https://pastebin.com/Dw1n2MAh)
+
+0xD - unknown. (always 00s?)
+
+from 0x10 to 0x43 - every move learned by leveling up, represented by 2 bytes each
+from 0x44 to 0x5D - levels at which each move is learned. 1 byte for each move
+
+0x5E and 0x5F - unknown (always 00?)
+
+0x60 - one byte deciding which tiles a Pokémon can stand on:
+bit 0 - unknown. ground?
+bit 1 - if active, the Pokémon can float over tiles
+bit 2 - if active, the Pokémon can walk through walls tiles
+bit 3 - if active, the Pokémon can walk over lava tiles
+bit 4 - if active, the Pokémon can walk over water tiles
+bit 5 - unknown.
+bit 6 - unknown.
+bit 7 - unknown.
+
+0x64 and 0x65 - Pokédex Number
+0x66 - unknown. seems to be the same value + 1 for shinies. seems to be related to the Pokémon's ID. similar to 0x66/0x67 in gti?
+0x6a - unknown. different for shinies? (always C0 for shinies?)
+0x6b - unknown. different for shinies? (always FF for shinies?)
+0x6c - unknown. different for shinies? (always C0 for shinies?)
+
+
+0x72 - unknown
+0x74 - base HP
+0x76 - base attack
+0x78 - base sp attack
+0x7a - base defense
+0x7c - base sp defense
+0x7e - base speed
+0x80 - unknown. maybe starting level (and so always 1). what would be the point of that though?
+
+0x84 - evolutionary line ID, used for experience.bin
+
+
+0x90 - ability 1
+0x91 - ability 2
+0x92 - hidden ability
+0x93 - type 1
+0x94 - type 2
+0x98 - unknown. seems to be 1 for most Mega Evolutions, but it doesn't apply to all of them (see Altaria, Rayquaza and more)
+0x9a - unknown. different for (some? see Butterfree) shinies?
+from 0x9b to 0xae - in Mankey's entry (0x43), this is a string that reads "UNLOCK_FRIEND_MANKII"
