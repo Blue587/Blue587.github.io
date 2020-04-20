@@ -41,7 +41,7 @@ bit 7 - unknown.
 
 0x90 - ability 1
 0x91 - ability 2
-0x92 - hidden ability
+0x92 - hidden ability (unused)
 0x93 - type 1
 0x94 - type 2
 0x98 - unknown. seems to be 1 for most Mega Evolutions, but it doesn't apply to all of them (see Altaria, Rayquaza and more)
