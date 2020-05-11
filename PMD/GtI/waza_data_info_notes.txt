@@ -15,7 +15,7 @@ each move has a 0x1E bytes long entry
 0x1C - effect of the move? needs to be tested
 
 possible values for Range:
-00 - "Others" (crashes the game)
+00 - "Others" (unused, crashes the game)
 01 - "Front"
 02 - "2 tiles away"
 03 - "Front 3-tile range" (unused)
