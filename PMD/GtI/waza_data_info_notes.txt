@@ -1,3 +1,5 @@
+each move has a 0x1E bytes long entry
+
 0x00 - effects of the move? such as lowering stats or causing a Status. if 44, it's a one-hit ko move. more info needed
 0x02 - Type
 0x03 - Category
