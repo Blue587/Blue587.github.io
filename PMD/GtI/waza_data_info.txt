@@ -1,0 +1,29 @@
+0x00 - effects of the move? such as lowering stats or causing a Status. if 44, it's a one-hit ko move. more info needed
+0x02 - Type
+0x03 - Category
+0x04 - if not 01, it's a multi-hit move. 00 if amount of hits can vary. 02 and 05 correspond to the amount of hits. (try to edit)
+0x05 - base Power
+0x06 - max Power
+0x07 - base Accuracy
+0x08 - max Accuracy
+0x09 - base PP
+0x0A - max PP
+0x19 - Range
+0x1A - unknown. initially seemed to be Target, but probably isn't
+0x1C - effect of the move? needs to be tested
+
+possible values for Range:
+00 - "Others" (crashes the game)
+01 - "Front"
+02 - "2 tiles away"
+03 - "Front 3-tile range" (unused)
+04 - "Front, cuts corners"
+05 - "Flies 2 tiles away"
+06 - "Flies 10 tiles away"
+07 - "Flies endlessly" (unused)
+08 - "Nearby Pokémon"
+09 - "Entire room"
+0A - "Entire floor"
+0B - "Others" (unused, crashes the game?)
+0C - "Others"
+0D - "User"
