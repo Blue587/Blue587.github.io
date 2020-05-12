@@ -18,14 +18,16 @@ possible values for Range:
 00 - "Others" (unused, crashes the game)
 01 - "Front"
 02 - "2 tiles away"
-03 - "Front 3-tile range" (unused)
+03 - "Front 3-tile range" (unused by moves obtainable by the player)
 04 - "Front, cuts corners"
 05 - "Flies 2 tiles away"
 06 - "Flies 10 tiles away"
-07 - "Flies endlessly" (unused)
+07 - "Flies endlessly" (unused by moves obtainable by the player)
 08 - "Nearby Pokémon"
 09 - "Entire room"
 0A - "Entire floor"
 0B - "Others" (unused, crashes the game?)
 0C - "Others"
 0D - "User"
+0E - "Entire room" (wider range in hallways) (unused by moves obtainable by the player)
+0F - "Others" (effect seems to be the same as Front, cuts corners) (unused by moves obtainable by the player)
