@@ -1,0 +1,739 @@
+
+Stick
+Iron Thorn
+Silver Spike
+Platinum Spike
+$
+Geo Pebble
+Gravelerock
+Gigali Rock
+$
+$
+Plain Ribbon
+Gold Ribbon
+Mobile Scarf
+Power Band
+Defense Scarf
+Special Band
+Zinc Band
+Heal Ribbon
+Twist Band
+Scope Lens
+No-Stick Cap
+Pierce Band
+Joy Ribbon
+X-Ray Specs
+Persim Band
+Pecha Scarf
+Insomniscope
+Warp Scarf
+Goggle Specs
+Trap Scarf
+Detect Band
+Pass Scarf
+Weather Band
+Friend Bow
+Choice Ribbon
+Fickle Ribbon
+Lucky Ribbon
+Cover Band
+Reunion Cape
+Gold Scope
+Coalition Scarf
+Cheering Flag
+Immunity Flag
+Limber Flag
+Insomnia Flag
+Clarity Flag
+Resilient Flag
+Tough Flag
+Courage Crown
+Effort Crown
+Wisdom Crown
+Persistence Crown
+Heart Pendant
+Sparkly Scarf
+$
+$
+$
+$
+Apple
+Big Apple
+Grimy Food
+$unused
+Heal Seed
+Oran Berry
+Eyedrop Seed
+Reviver Seed
+Blinker Seed
+Doom Seed
+Rawst Berry
+Quick Seed
+Pecha Berry
+Cheri Berry
+Totter Seed
+Sleep Seed
+Plain Seed
+Warp Seed
+Blast Seed
+Joy Seed
+Chesto Berry
+Stun Seed
+Golden Seed
+Vile Seed
+Pure Seed
+Violent Seed
+Training Seed
+Encourage Seed
+Mini Donut
+Donut
+Mega Donut
+Normal Device
+Grass Device
+Fire Device
+Water Device
+Electric Device
+Ice Device
+Fighting Device
+Poison Device
+Ground Device
+Flying Device
+Psychic Device
+Bug Device
+Rock Device
+Ghost Device
+Dragon Device
+Dark Device
+Steel Device
+Energy Seed
+$
+$
+$
+$
+Max Elixir
+Sitrus Berry
+Life Seed
+Protein
+Iron
+Calcium
+Zinc
+Accuracy Manual
+Power Manual
+PP Manual
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+$unused
+Escape Orb
+Hail Orb
+Sunny Orb
+Rainy Orb
+Sandy Orb
+Evasion Orb
+See-Trap Orb
+Trapbust Orb
+Switcher Orb
+Blowback Orb
+Warp Orb
+Slow Orb
+Quick Orb
+Luminous Orb
+Petrify Orb
+Stayaway Orb
+Pounce Orb
+Trawl Orb
+Cleanse Orb
+Slumber Orb
+Totter Orb
+Two-Edge Orb
+Scanner Orb
+Radar Orb
+Rollcall Orb
+One-Shot Orb
+Mobile Orb
+Stairs Orb
+Pierce Orb
+Spurn Orb
+Foe-Hold Orb
+Foe-Fear Orb
+Foe-Seal Orb
+Health Orb
+Nullify Orb
+Surround Orb
+All Power-Up Orb
+All Dodge Orb
+All Protect Orb
+Align Orb
+Decoy Orb
+Deposit Orb
+Enemy Evolve Orb
+Devolve Orb
+Monster Orb
+$unused
+$unused
+$unused
+$unused
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+Thunderstone
+$
+$
+Sun Stone
+Moon Stone
+Fire Stone
+Water Stone
+$
+Leaf Stone
+$
+Link Cable
+$
+$
+$
+$
+$
+$
+$
+$
+$
+Shiny Stone
+Dusk Stone
+$
+Mossy Rock
+Frozen Rock
+$
+Heart of the Sun
+Heart of the Moon
+$
+$
+Red Key
+Blue Key
+Green Key
+Black Key
+$
+$
+Prize Ticket
+Silver Ticket
+Gold Ticket
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+Mysterious Item
+Poké
+Gold Bar
+$
+$
+Gorgeous Box
+Gorgeous Box
+Gorgeous Box
+Heavy Box
+Heavy Box
+Heavy Box
+Shiny Box
+Shiny Box
+Shiny Box
+Nifty Box
+Nifty Box
+Nifty Box
+Dainty Box
+Dainty Box
+Dainty Box
+Glittery Box
+Glittery Box
+Glittery Box
+Pretty Box
+Pretty Box
+Pretty Box
+Light Box
+Light Box
+Light Box
+Cute Box
+Cute Box
+Cute Box
+Hard Box
+Hard Box
+Hard Box
+Sinister Box
+Sinister Box
+Sinister Box
+Deluxe Box
+Deluxe Box
+Deluxe Box
+Hone Claws
+Dragon Claw
+Psyshock
+Calm Mind
+Roar
+Toxic
+Hail
+Bulk Up
+Venoshock
+Hidden Power
+Sunny Day
+Taunt
+Ice Beam
+Blizzard
+Hyper Beam
+Light Screen
+Protect
+Rain Dance
+Telekinesis
+Safeguard
+Frustration
+SolarBeam
+Smack Down
+Thunderbolt
+Thunder
+Earthquake
+Return
+Dig
+Psychic
+Shadow Ball
+Brick Break
+Double Team
+Reflect
+Sludge Wave
+Flamethrower
+Sludge Bomb
+Sandstorm
+Fire Blast
+Rock Tomb
+Aerial Ace
+Torment
+Facade
+Flame Charge
+Rest
+Attract
+Thief
+Low Sweep
+Round
+Echoed Voice
+Overheat
+$
+Focus Blast
+Energy Ball
+False Swipe
+Scald
+Fling
+Charge Beam
+Sky Drop
+Incinerate
+$
+Will-O-Wisp
+Acrobatics
+Embargo
+Explosion
+Shadow Claw
+Payback
+Retaliate
+Giga Impact
+Rock Polish
+Flash
+Stone Edge
+Volt Switch
+Thunder Wave
+Gyro Ball
+Swords Dance
+Struggle Bug
+Psych Up
+Bulldoze
+Frost Breath
+Rock Slide
+X-Scissor
+Dragon Tail
+Work Up
+Poison Jab
+Dream Eater
+Grass Knot
+Swagger
+Pluck
+U-turn
+Substitute
+Flash Cannon
+Trick Room
+Wild Charge
+Rock Smash
+Cut
+Fly
+Surf
+Strength
+Waterfall
+$
+Frenzy Plant
+Blast Burn
+Hydro Cannon
+Volt Tackle
+Draco Meteor
+Snarl
+$
+$
+$
+$
+$
+$
+Eevee Gift
+$
+$
+$
+Pichu Gift
+$
+$
+Wooper Gift
+$
+$
+$
+Dunsparce Gift
+Swinub Gift
+$
+Wingull Gift
+$
+Azurill Gift
+$
+Bagon Gift
+$
+$
+Cranidos Gift
+$
+Glameow Gift
+$
+Croagunk Gift
+$
+$
+$
+$
+$
+Snivy Gift
+$
+$
+Tepig Gift
+$
+$
+Oshawott Gift
+$
+$
+Patrat Gift
+$
+Lillipup Gift
+$
+$
+Pansage Gift
+$
+Pansear Gift
+$
+Panpour Gift
+$
+Munna Gift
+$
+Blitzle Gift
+$
+Roggenrola Gift
+$
+$
+Woobat Gift
+$
+Drilbur Gift
+$
+Audino Gift
+Timburr Gift
+$
+$
+Tympole Gift
+$
+$
+Sewaddle Gift
+$
+$
+Venipede Gift
+$
+$
+Cottonee Gift
+$
+Petilil Gift
+$
+Sandile Gift
+$
+$
+Dwebble Gift
+$
+Scraggy Gift
+$
+Yamask Gift
+$
+Tirtouga Gift
+$
+Archen Gift
+$
+Trubbish Gift
+$
+Zorua Gift
+$
+Minccino Gift
+$
+Gothita Gift
+$
+$
+Ducklett Gift
+$
+Emolga Gift
+Foongus Gift
+$
+Joltik Gift
+$
+Klink Gift
+$
+$
+Litwick Gift
+$
+$
+Axew Gift
+$
+$
+Cubchoo Gift
+$
+Cryogonal Gift
+Mienfoo Gift
+$
+Druddigon Gift
+Golett Gift
+$
+Pawniard Gift
+$
+Rufflet Gift
+$
+Vullaby Gift
+$
+Deino Gift
+$
+$
+Larvesta Gift
+$
+$
+$
+$
+$
+$
+Normal Gift
+Fire Gift
+Water Gift
+Grass Gift
+Electric Gift
+Ice Gift
+Fighting Gift
+Poison Gift
+Ground Gift
+Flying Gift
+Psychic Gift
+Bug Gift
+Rock Gift
+Ghost Gift
+Dragon Gift
+Dark Gift
+Steel Gift
+Premier Gift
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+$
+Soil Pigment
+Rich Soil
+Ancient Soil
+Rare Soil
+Wood Pigment
+Precious Branch
+Heavy Lumber
+Fine Log
+Metal Pigment
+Lustrous Metal
+Reflective Alloy
+Gilded Metal
+Stone Pigment
+Stone Slab
+Unbreakable Rock
+Endless Stone
+Vine Pigment
+Sturdy Vine
+Hardy Vine
+Everlasting Vine
+Grass Pigment
+Fresh Herb
+Leaf Bouquet
+Grass Veil
+Water Pigment
+Spring Water
+Well Water
+Rainbow Drop
+$
+$
+$
+$
+$
+$
+$
+$
+$
+Mud Trap
+Sticky Trap
+Summon Trap
+Pitfall Trap
+Warp Trap
+Gust Trap
+Spin Trap
+Slumber Trap
+Slow Trap
+Seal Trap
+Poison Trap
+Blast Trap
+Big Blast Trap
+PP Leech Trap
+Spiky Trap
+Wonder Tile
+Pokémon Trap
+$
+Stealth Rock
+Toxic Spikes
+Trip Trap
+Random Trap
+Grudge Trap
+Training Switch
+Sparkling Floor
+Gold Floor
+Grimy Trap
+$
+$
+$
+$Pitfall Trap
+Stairs
+Stairs
+Exit
+Popular Ribbon
+Trendy Specs
+Famous Seed
+Rumored Orb
+Topical Gift
+Topical Bottle
+Famous Stone
+Mysterious Treasure
+Requested Item
+Particular Key
+Requested Item
+Rumored Tag
+Premium Apple
+Requested Item
+Particular Box
+Requested Item
+Requested Item
+Requested Item
+Requested Item
+Requested Item
