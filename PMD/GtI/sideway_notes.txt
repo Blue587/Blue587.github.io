@@ -1,0 +1,8 @@
+0x11a entries, 0x6 bytes each
+0x0 - dungeon ID
+0x2 - floor
+0x4 - kind of barricade
+
+changing 0x2 doesn't actually change it in game, it only changes Woobat's notification when you reach the floor
+changing 0x4 doesn't seem to affect anything in game
+this file doesn't affect the detour list at Woobat's facility
