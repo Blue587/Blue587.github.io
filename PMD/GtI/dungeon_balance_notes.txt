@@ -1,0 +1,81 @@
+Credits: StrikerX3, Blue
+
+It does not contain info on Mysteriosity dungeons, that's in floor_jump.bin
+It contains detours, but not detour notifications (if you replace the entries, you will get a detour notification despite there being no detours). Notifications are in sideway.bin
+
+each entry is a GYU0-compressed SIR0 file containing a binary data section (dungeon info table) followed by two more sir0 files
+subheader:
+- 4 bytes: pointer to dungeon info table
+- 4 bytes: pointer to pokémon info table
+- 4 bytes: pointer to traps info table
+
+"dungeon" data has a floor 0 that is ignored
+the floor 0 in "spawns" data is actually floor 1
+the floor 0 in "traps" data is actually floor 1
+
+dungeon info table:
+raw data: entries are 0x54 bytes long
+first entry is immediately after the first SIR0 header (0x10) and first pointer in the parent SIR0 subheader
+- [00] 2 bytes: floor index
+  - 1000+ floors are used when the dungeon is accessed from a mission
+  - last entry is floor FFFF (-1)
+- [02] 2 bytes: unknown
+- [04] 32 ASCII characters: event name
+- [24] 2 bytes: unknown
+- [26] 2 bytes: unknown, usually a multiple of 10, also usually has a higher value on floor 0 and the floor where the dungeon ends
+- [28] 2 bytes: same as 26, these two values might be related
+- [2A] 2 bytes: map ID matching dungeon_map_data_info.bin (includes music but not graphics, I don't know how music works in DLC dungeons yet). also includes fixed rooms. (environment 109 is Reshiram boss fight, but items and other enemies still spawned) and the areas used for gridless floors (however changing this doesn't affect the starting position and the things you can interact with. also, what tells the game if a floor is a gridless floor isn't in the dungeon info table: if you set a normal floor to have the a gridless floor's environment ID, you will always be on the grid)
+- starting from 2C, seems like everything is a single byte.
+- [2C] map dungeon/floor name ID (matches with 0x04 in dungeon_data_info.bin, can also be different for each floor like in Ragged Mountain, floor number is unaffected)
+- [2E] floor visibility (0 = none, 1 = can see 1 tile around, 2 = 2 tiles around)
+- [3C] seems similar to 0x46 and 0x47. changing both made 2 Wonder Tiles spawn (only tried in a fixed room)
+- [3D] see above
+- [3F] percentage chance of Kecleon Shop
+- [43] unknown. seems similar to 0x46 and 0x47. (not sure about the following) setting this to 0x00 alongside something else (don't know what) made the floor already have Pokémon when entered.
+- [46] setting both 0x46 and 0x47 to 0x00 makes Pokémon not spawn, but this only seems to apply to gridless floors. 
+- [47] see above (0x00 in Ragged Mountain first visit floor 1, 0x05 in Ragged Mountain ID 24 floor 1. however these bytes are NOT 0x00 in Inflora Forest floor 1, even though Pokémon don't spawn there)
+- [49] amount of turns for an enemy Pokémon to spawn. if set to 0x00 you can't check the list of Pokémon that can spawn on the floor, and Pokémon don't spawn. doesn't affect the initial state of the floor. might be different for whatever data blue Magnagate dungeons use, since you can't check the list there, but Pokémon still spawn
+
+pokémon info table:
+SIR0 file
+subheader:
+- 4 bytes: amount of entries in the subheader (N)
+- N*4 bytes: pointer to Nth entry
+
+content:
+- 4 bytes for each species (250 species with 4 bytes each = 0x3e8 bytes for each floor)
+to check: does every floor actually need 0x3e8 bytes each, or does it depend on the addresses in the subheader?
+- [00] 1 byte: pokémon index
+- [01] 1 byte:
+    bit 0 - unknown flag?
+    bits 1 through 7 - Pokémon level
+- [02] 1 byte:
+    bit 0 - Kecleon flag
+    bits 1 through 7 - spawn weight
+- [03] 1 byte (flags):
+    bit 0 - unknown.
+    bit 1 - unknown.
+    bit 2 - unknown.
+    bit 3 - unknown.
+
+    bit 4 - crashes the game if enabled alongside bit 7. the Pokémon doesn't spawn if enabled, but appears in the list.
+    bit 5 - if enabled alongside bit 7, the Pokémon only spawns inside detours. unknown otherwise
+    bit 6 - if enabled alongside bit 7, the Pokémon spawns asleep and doesn't wake up unless attacked (however after unknown conditions are met the Pokémon will spawn normally. see Poké Forest for an in-game example of this). unknown otherwise. the Pokémon doesn't spawn if enabled by itself, but appears in the list.
+    bit 7 - see bits 5 and 6. unknown otherwise.
+- FFFFFFFF => "end of list"
+
+(tried setting all the bits, never saw a female Pikachu)
+0110 0101 used for Landorus in Breezy Meadow (32.bin) - I did some tests but I don't understand how these work at all
+1010 0010 used in 91.bin (an unused dungeon?)
+1010 0000 used in 96.bin and 98.bin (unused dungeons?)
+
+traps info table:
+SIR0 file
+subheader:
+- 4 bytes: entry count (N)
+- N*4 bytes: pointer to Nth entry
+
+each entry is the data for one floor, which then has a 4-bytes entry for each trap or floor tile that can spawn on that floor
+  - 2 bytes: trap index
+  - 2 bytes: spawn weight
+  - when both are FFFF => "end of single floor data"
