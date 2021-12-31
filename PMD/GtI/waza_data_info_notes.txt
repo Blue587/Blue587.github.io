@@ -1,17 +1,23 @@
-each move has a 0x1E bytes long entry
+moves that hit after 1 turn (like Fly or Dig) have 2 entries, one that gets used on the first turn and one that gets used in the next turn. this can be seen in game, although the "two" moves only show identical data to the player. however, internally they are different. the Power and Accuracy of the first part of the move is always 0/0 (Power) and 101/101 (Accuracy), while the actual power that is shown to the player internally is technically only in the second entry. their Power can be increased through upgrading or manuals. for instance the move Fly has 2 entries: 0x13 and 0x239. the Power and max Power of 0x13 are 0 and 0. the game shows the actual power, which internally is that of 0x239. MAX POWER FOR FLY DOESN'T SEEM TO BE 0x239??? Needs more research
 
-0x00 - effects of the move? such as lowering stats or causing a Status. if 44, it's a one-hit ko move. more info needed
+
+pokemon/waza_data_info.bin
+0x1e entries
+
+0x00 - effects of the move? if 44, it's a one-hit ko move. more info needed
 0x02 - Type
 0x03 - Category
 0x04 - if not 01, it's a multi-hit move. 00 if amount of hits can vary. 02 and 05 correspond to the amount of hits. (try to edit)
+editing 0x04 doesn't actually seem to change anything in-game, why?
 0x05 - base Power
 0x06 - max Power
 0x07 - base Accuracy
 0x08 - max Accuracy
 0x09 - base PP
 0x0A - max PP
+0x0E - ID of the Status Condition caused to the Target
 0x19 - Range
-0x1A - unknown. initially seemed to be Target, but probably isn't
+0x1A - Target. for two parts moves (like Fly) the game displays the Target of part 1. for Fly and other moves, this value is 0C, which is not used for normal moves. need to find out what the differences are.
 0x1C - effect of the move? needs to be tested
 
 possible values for Range:
