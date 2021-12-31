@@ -1,0 +1,12 @@
+script/dungeon/encount_think.lua - idle animations used in Gridless Floors?
+
+The script/encount folder, as well as script/event/other/encount_ev/, contain scripts used in Gridless floors.
+
+Ragged Mountain (first visit) - sankankaidou
+Ragged Mountain - sankankaidou_back
+Hazy Pass       - kageroutouge
+Stompstump Peak - tontonyama
+Inflora Forest  - shikisainomori
+Glacier Palace  - guressha_in
+Ochre Quarry?   - dangai
+Holehills       - fuuketsu
