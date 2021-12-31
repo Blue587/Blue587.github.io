@@ -1,0 +1,26 @@
+SIR0 file
+subheader (0x15270):
+- 4 bytes: amount of entries in the subheader (N)
+- N*4 bytes: pointer to Nth entry
+
+each entry seems to match a dungeon
+
+each entry seems to start with an amount of floors (4 bytes), followed by a list of addresses (4 bytes each), pointing to the start of each floor data of the previous entry
+(the size of the list of addresses is amount of floors * 4 bytes long)
+some entries are separated by a varying amounts of 00 bytes (making them divisible by 0x10? need to check)
+this ends with FF FF FF FF
+in the first entry, this list is just 00 00 00 00 (amount of floors), as there is no previous entry
+
+after that, data for each floor starts.
+first four bytes - floor that you're currently exploring
+0x00 - current dungeon ID
+0x01 - current floor
+0x02 - unk. usually (always?) 0x63
+0x03 - unk. always 0x00?
+following four bytes (and next, seems to be one for each possible warps a floor has) - dungeon and floor that you may end up in when taking the stairs
+0x00 - destination dungeon ID (only works with some dungeons. even if the dungeon seems to be valid in other floors, it doesn't guarantee that it works on another floor in the same dungeon. how does the game know which destination dungeons to ignore? the weight doesn't matter?)
+0x01 - destination floor (0xFF when its not used, alongside 0x00 weight)
+0x02 - weight
+0x03 - unk. always 0x00?
+data for a floor ends with FF FF FF FF
+a floor without data is also just FF FF FF FF
