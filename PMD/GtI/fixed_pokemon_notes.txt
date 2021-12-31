@@ -1,0 +1,29 @@
+dungeon/fixed_pokemon.bin
+0x20 bytes long entries
+0x00 - Pokémon ID
+0x01 - unk
+0x02 - Additional HP boost (2 bytes)
+0x04 - unk
+0x05 - unk
+0x06 - unk
+0x07 - unk
+0x08 - Move 1 (2 bytes)
+0x0A - Move 2 (2 bytes)
+0x0C - Move 3 (2 bytes)
+0x0E - Move 4 (2 bytes)
+0x10 - unk
+0x11 - unk
+0x12 - unk
+0x13 - unk
+0x14 - unk
+0x15 - unk
+0x16 - Level
+0x17 - Additional Attack boost
+0x18 - Additional Defense boost
+0x19 - Additional Special Attack boost
+0x1A - Additional Special Defense boost
+0x1B - Ability 1 from the Pokémon's pokemon_data_info.bin entry (should be 00, or 01, or 02 or 03? None, 1, 2 and hidden? needs testing)
+0x1C - Ability 2? (always matches ability 1? needs testing)
+0x1D - unk
+0x1E - unk
+0x1F - unk
