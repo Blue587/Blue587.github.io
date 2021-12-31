@@ -1,0 +1,16 @@
+from 0x0 to 0x24 - SIR0 header
+
+each Pokémon (including Mega Evolutions) has 0x14 bytes long entries for each possible evolution (including normal->shiny and shiny->shiny, but not shiny->normal) if a Pokémon (including Mega Evolutions) doesn't have any evolutions all the bytes will be 00s. 
+examples: Metapod has 2 evolutions because shiny Butterfree is in the game, Eevee has 9 evolutions because shiny Espeon is in the game
+
+0x0 and 0x1 - ID of the evolution (example: Bulbasaur's evolution ID is 02)
+0x2 - unknown. usually 00. E2 sometimes (Pichu, Pikachu, Eevee, Porygon, Porygon2, probably more)
+0x3 - always 00?
+0x4 - amount of Evolution Crystals required
+from 0x5 to 0xb - always 00s?
+0xc - level required
+0xd - evolution method (01 requires a certain level, 02 requires a certain amount of Evolution Crystals)
+from 0xe to 0x13 - always 00s?
+
+amount of entries: 0x40a
+the last entry starts at adress 0x50ec
