@@ -1,0 +1,17 @@
+dungeon_map_data_info
+0x14 bytes entries
+doesn't include the models that the floors display
+fixed floors includes the floors used for the grids that appear when a battle starts in a gridless floor, however what decides if a floor is gridless is not in this file, nor in dungeon_balance, so if the map data of a gridless floor is copied to another floor, it will be the grid-only version of that floor.
+
+0x00 - (2 bytes) index
+0x05 - unknown. always 0
+0x06 - fixed floor ID. ignored if 0x0B isn't 3?
+0x08 - music
+0x0A - random_pards ID. ignored if 0x0B isn't 1 or 2?
+0x0B - floor type. 1 = random_parts floor using 0x0A, 2 = gridless floor?, 3 = fixed floor using 0x06
+0x0C - unknown. always 0
+0x0D - unknown. either 0 or 1. related to how the graphics are displayed/connected?
+0x0E - unknown. either 0 or 1. related to how the graphics are displayed/connected?
+0x0F - unknown. either 0 or 1. related to how the graphics are displayed/connected
+0x10 - unknown. either 0 or 1. related to how the graphics are displayed/connected?
+0x13 - unknown. always 0
