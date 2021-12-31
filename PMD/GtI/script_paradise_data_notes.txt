@@ -1,0 +1,24 @@
+0x140 - Paradise Rank data
+0xA entries, one for each rank
+    0x0  - points required
+    0x4  - bag expansion
+    0x8  - index
+    0xC  - an address (points to some related strings and other data)
+    0x10 - another address
+
+0x3c33c - Swap Shop data
+0x3C entries
+    0x0  - item received by the player
+    0x4  - unk
+    0x8  - unk
+    0xC  - unk
+    0x14 - first required item
+    0x18 - required amount of first required item
+    0x1C - second
+    0x20 - second amount
+    0x24 - third
+    0x28 - third amount
+    0x2c - fourth
+    0x30 - fourth amount
+    0x34 - fifth?
+    0x38 - fifth amount?
