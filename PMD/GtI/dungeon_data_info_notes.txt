@@ -1,14 +1,15 @@
+dungeon_data_info
 each dungeon has an entry of 0x28 bytes
 
-0x01 - entry ID
+0x00 - entry ID
 
 0x02
-bit 0 - unk
+bit 0 - stairs direction
 bit 1 - if active, enemies evolve
 bit 2 - unk
 bit 3 - if active, you can recruit Pokémon
 
-bit 4 - if active, team level resets to 5
+bit 4 - if active, party level resets to 5
 bit 5 - unk
 bit 6 - if active, can change leader inside dungeon
 bit 7 - unk.
@@ -19,7 +20,7 @@ bit 1 - unk
 bit 2 - unk
 bit 3 - hunger
 
-bit 4 - unk
+bit 4 - unk. team skills?
 bit 5 - if active, the player can restart the dungeon after fainting
 bit 6 - unk
 bit 7 - unk
@@ -27,10 +28,13 @@ bit 7 - unk
 0x04 - dungeon name ID (only seen in dungeon info on the map)
 0x05 - related to dungeon name?
 
+0x0A-0x0B - sort key
+
 0x10-0x11 - map location x axis
 0x12-0x13 - map location y axis
 (all 00s = Post Town crossroad, starts from top left otherwise)
 
 0x21 - number of times you can get rescued
-0x22 - number of items allowed
-0x23 - max team members
+0x22 - number of items allowed, additonally if 0 all items are lost when failing
+0x23 - max party members
+0x24 - max Mysteriosity (this can happen if it's above 5 https://mysterydungeonwiki.com/wiki/Gates:Miscellaneous_unused_content#Unused_Mysteriosity_effect)
